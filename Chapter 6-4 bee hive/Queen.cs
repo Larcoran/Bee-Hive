@@ -36,6 +36,12 @@ namespace Chapter_6_4_bee_hive
 
         #region Public Methods
 
+        /// <summary>
+        /// Check if there is worker availiable for a job. Assign the job to him and return true. If there is no worker available, return false.
+        /// </summary>
+        /// <param name="workToAssign"></param>
+        /// <param name="shifts"></param>
+        /// <returns></returns>
         public bool AssignWork(string workToAssign, int shifts)
         {
             for(int x = 0; x<Workers.Length; x++)
@@ -47,6 +53,10 @@ namespace Chapter_6_4_bee_hive
 
         }
 
+        /// <summary>
+        /// Generate report for this shift and move to next shift.
+        /// </summary>
+        /// <returns></returns>
         public string WorkTheNextShift()
         {
             double honeyConsumed = HoneyConsumptionRate();

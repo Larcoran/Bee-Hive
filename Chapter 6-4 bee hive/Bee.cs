@@ -31,6 +31,10 @@ namespace Chapter_6_4_bee_hive
 
         #region Virtual Methods
 
+        /// <summary>
+        /// calculate Honey consumption for a bee.
+        /// </summary>
+        /// <returns></returns>
         virtual public double HoneyConsumptionRate()
         {
             return WeightMg * HoneyUnitsConsumedPerMg;

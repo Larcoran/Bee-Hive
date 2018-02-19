@@ -43,6 +43,12 @@ namespace Chapter_6_4_bee_hive
 
         #region Public Methods
 
+        /// <summary>
+        /// sets worker jobs and shifts fields.
+        /// </summary>
+        /// <param name="jobToDo"></param>
+        /// <param name="forThatManyShifts"></param>
+        /// <returns></returns>
         public bool DoThisJob(string jobToDo, int forThatManyShifts)
         {
             if (!String.IsNullOrEmpty(currentJob))
@@ -58,6 +64,10 @@ namespace Chapter_6_4_bee_hive
                 return false;
         }
 
+        /// <summary>
+        /// check did worker finished his job.
+        /// </summary>
+        /// <returns></returns>
         public bool DidYouFinish()
         {
             if (String.IsNullOrEmpty(currentJob))
