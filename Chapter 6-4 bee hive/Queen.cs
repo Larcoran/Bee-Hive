@@ -8,8 +8,14 @@ namespace Chapter_6_4_bee_hive
 {
     class Queen : Bee
     {
+        #region Private Fields
+
         private Worker[] workers;
         private int shiftNumber = 0;
+
+        #endregion
+
+        #region Properties
 
         public Worker[] Workers
         {
@@ -17,10 +23,18 @@ namespace Chapter_6_4_bee_hive
             set { workers = value; }
         }
 
+        #endregion
+
+        #region Constructor
+
         public Queen(Worker[] workers,double weightMg):base(weightMg)
         {
             this.workers = workers;
         }
+
+        #endregion
+
+        #region Public Methods
 
         public bool AssignWork(string workToAssign, int shifts)
         {
@@ -63,5 +77,7 @@ namespace Chapter_6_4_bee_hive
             report += "Total honey consumed for the shift: " + honeyConsumed + " units.\r\n";
             return report;
         }
+
+        #endregion
     }
 }

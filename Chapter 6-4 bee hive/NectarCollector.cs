@@ -8,7 +8,22 @@ namespace Chapter_6_4_bee_hive
 {
     class NectarCollector : Worker
     {
+        #region Properties
+
         public int Nectar { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        public NectarCollector()
+        {
+
+        }
+
+        #endregion
+
+        #region Methods
 
         public void FindFlowers()
         {
@@ -24,5 +39,7 @@ namespace Chapter_6_4_bee_hive
         {
 
         }
+
+        #endregion
     }
 }
