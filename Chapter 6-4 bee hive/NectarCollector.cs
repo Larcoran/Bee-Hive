@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Chapter_6_4_bee_hive
 {
-    class NectarCollector
+    class NectarCollector : Worker
     {
+        public int Nectar { get; set; }
+
+        public void FindFlowers()
+        {
+
+        }
+
+        public void GatherNectar()
+        {
+
+        }
+
+        public void ReturnToHive()
+        {
+
+        }
     }
 }
