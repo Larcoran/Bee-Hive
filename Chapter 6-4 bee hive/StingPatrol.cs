@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace Chapter_6_4_bee_hive
 {
-    class StingPatrol
+    class StingPatrol:Worker
     {
+        #region Properties
+
+        public int AlertLevel { get; private set; }
+        public int StingerLegth { get; set; }
+
+        #endregion
+
+        #region Methods
+
+        public bool SharpernStinger (int Length)
+        {
+
+        }
+
+        public void Sting(string Enemy)
+        {
+
+        }
+
+        #endregion
     }
 }
