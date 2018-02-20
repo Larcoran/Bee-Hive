@@ -6,39 +6,15 @@ using System.Threading.Tasks;
 
 namespace Chapter_6_4_bee_hive
 {
-    class NectarCollector : Worker
+    interface INectarCollector
     {
-        #region Properties
-
-        public int Nectar { get; set; }
-
-        #endregion
-
-        #region Constructor
-
-        public NectarCollector()
-        {
-
-        }
-
-        #endregion
-
         #region Methods
 
-        public void FindFlowers()
-        {
+        void FindFlowers();
 
-        }
+        void GatherNectar();
 
-        public void GatherNectar()
-        {
-
-        }
-
-        public void ReturnToHive()
-        {
-
-        }
+        void ReturnToHive();
 
         #endregion
     }
